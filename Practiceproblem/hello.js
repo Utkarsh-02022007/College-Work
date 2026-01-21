@@ -50,5 +50,5 @@
 // console.log(firstName[firstName.length-3])
 // console.log(firstName.length
 
-
+console.log("hello world")
 
