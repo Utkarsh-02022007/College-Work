@@ -85,10 +85,14 @@
 // }
 // first()
 
-let total=100
+// let total=100
 
-function cal(){
-    console.log(total)
-    let total=50
-}
-cal()
+// function cal(){
+//     console.log(total)
+//     let total=50
+// }
+// cal()
+
+console.log("hello")
+setTimeout(()=>{console.log("hello2sec")},2000)
+console.log("hello3")
