@@ -26,7 +26,7 @@
 //     even.preventDefault();
 // })
 
-// -----------------event propogation------------ travelling of DOM. 3stages => capturing,target,bubbleing. Default Capturing True is used for bubbleing
+// -----------------event propogation------------ travelling of DOM. 3stages => capturing,target,bubbleing. Default Capturing and True is used for bubbleing
 
 // const div2=document.querySelector(".div2")
 // const btn=document.querySelector("button")
@@ -34,7 +34,7 @@
 
 // div.addEventListener('click',(event)=>{
 //     console.log("div1 is clicked")
-//     event.preventDefault();
+//     event.preventDeault();
 // })
 // div2.addEventListener('click',(event)=>{
 //     console.log("div2 is clicked")
@@ -50,5 +50,45 @@
 // console.log(firstName[firstName.length-3])
 // console.log(firstName.length
 
-console.log("hello world")
+// console.log("hello world")
 
+
+
+// console.log(a)
+// // console.log(b)
+
+// var a=657
+// let b=729
+
+// console.log(a)
+// console.log(b)
+
+// function zint(){
+//     let c=63
+//     console.log(c)
+//     console.log("inside function")
+
+// }
+// zint()
+
+// debugger
+
+// function first(){
+//     second()
+// }
+
+// function second(){
+//     third()
+// }
+// function third(){
+//     console.trace()
+// }
+// first()
+
+let total=100
+
+function cal(){
+    console.log(total)
+    let total=50
+}
+cal()
