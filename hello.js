@@ -155,3 +155,4 @@ btn.addEventListener("click",()=>{
     
     name.value=""
 })
+console.log
