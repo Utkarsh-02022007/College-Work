@@ -85,10 +85,73 @@
 // }
 // first()
 
-let total=100
+// let total=100
 
-function cal(){
-    console.log(total)
-    let total=50
-}
-cal()
+// function cal(){
+//     console.log(total)
+//     let total=50
+// }
+// cal()
+//--------------- timeout--------------
+// console.log("hello")
+// setTimeout(()=>{console.log("hello2sec")},2000)
+// console.log("hello3")
+
+// setInterval(() => {
+//     console.log("after 3sec")
+// }, 1000);
+// var hello=1
+// const timerId=setInterval(()=>{
+//     hello+=1
+//     console.log(hello)
+// },1000)
+
+// console.log(timerId)
+// setTimeout(()=>{
+//     clearInterval(timerId)
+// },1000)
+
+
+// let count=1
+
+// const timerId=setInterval(()=>{
+//     if(count===10)clearInterval(timerId)
+//     console.log(count)
+//     count+=1
+// },1000)
+
+// ---------btn and name box------------
+
+// const name=document.querySelector("#name")
+// const btn=document.querySelector(".btn")
+// const list=document.querySelector(".list")
+
+// btn.addEventListener("click",()=>{
+//     const li=document.createElement('li')
+//     li.innerText=name.value
+//     list.appendChild(li)
+//     name.value=""
+// })
+const name=document.querySelector("#name")
+const btn=document.querySelector(".btn")
+const list=document.querySelector(".list")
+
+btn.addEventListener("click",()=>{
+    if (name.value=="")return
+    const li=document.createElement("li")
+    const dlt=document.createElement("button")
+
+
+    dlt.innerText="Delete"
+    li.innerText=name.value;
+    dlt.addEventListener("click",()=>{
+        list.removeChild(li)
+    })
+
+
+    list.appendChild(li)
+    li.appendChild(dlt)
+
+    
+    name.value=""
+})
