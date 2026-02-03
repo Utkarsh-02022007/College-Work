@@ -168,29 +168,48 @@
 
 // }
 // greet(print)
-function finishHomework(callback){
-    console.log("Starting homework...");
+// function finishHomework(callback){
+//     console.log("Starting homework...");
+//     setTimeout(()=>{
+//         console.log("Homework Done!");
+//         callback();
+//     },2000);
+// }
+
+// function eatDinner(callback){
+//     console.log("Starting Dinner");
+//     setTimeout(()=>{
+//         console.log("Dinner Done!")
+//         callback();
+
+//     },1500);
+
+// }
+// function goToPlayground(){
+//     console.log("Going To The PlayGround!");
+// }
+// finishHomework(()=>{
+//     eatDinner(()=>{
+//         goToPlayground();
+//     })
+// })
+
+const d=new Promise((res,rej)=>{
+    let done=false
     setTimeout(()=>{
-        console.log("Homework Done!");
-        callback();
-    },2000);
-}
-
-function eatDinner(callback){
-    console.log("Starting Dinner");
-    setTimeout(()=>{
-        console.log("Dinner Done!")
-        callback();
-
-    },1500);
-
-}
-function goToPlayground(){
-    console.log("Going To The PlayGround!");
-}
-finishHomework(()=>{
-    eatDinner(()=>{
-        goToPlayground();
-    })
+        if(done){
+            res("work is done!!")
+        }else{
+            rej("work is not done")
+        }
+    },5000)
 })
-jdjdj
+package.then((msg)=>{
+    console.log(msg)
+
+}).catch((err)=>{
+    console.log(err)
+}).finally(()=>{
+    console.log("finally block")
+})
+console.log(d)
