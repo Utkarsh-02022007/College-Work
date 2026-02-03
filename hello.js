@@ -132,27 +132,64 @@
 //     list.appendChild(li)
 //     name.value=""
 // })
-const name=document.querySelector("#name")
-const btn=document.querySelector(".btn")
-const list=document.querySelector(".list")
 
-btn.addEventListener("click",()=>{
-    if (name.value=="")return
-    const li=document.createElement("li")
-    const dlt=document.createElement("button")
+// const name=document.querySelector("#name")
+// const btn=document.querySelector(".btn")
+// const list=document.querySelector(".list")
 
-
-    dlt.innerText="Delete"
-    li.innerText=name.value;
-    dlt.addEventListener("click",()=>{
-        list.removeChild(li)
-    })
+// btn.addEventListener("click",()=>{
+//     if (name.value=="")return
+//     const li=document.createElement("li")
+//     const dlt=document.createElement("button")
 
 
-    list.appendChild(li)
-    li.appendChild(dlt)
+//     dlt.innerText="Delete"
+//     li.innerText=name.value;
+//     dlt.addEventListener("click",()=>{
+//         list.removeChild(li)
+//     })
+
+
+//     list.appendChild(li)
+//     li.appendChild(dlt)
 
     
-    name.value=""
+//     name.value=""
+// // })
+// function greet (xyz){
+//     setTimeout(()=>{
+//         console.log("hello students")
+//         xyz(45)
+//     },2000)
+// }
+
+// function print(num){
+//     console.log("Total student are ",num)
+
+// }
+// greet(print)
+function finishHomework(callback){
+    console.log("Starting homework...");
+    setTimeout(()=>{
+        console.log("Homework Done!");
+        callback();
+    },2000);
+}
+
+function eatDinner(callback){
+    console.log("Starting Dinner");
+    setTimeout(()=>{
+        console.log("Dinner Done!")
+        callback();
+
+    },1500);
+
+}
+function goToPlayground(){
+    console.log("Going To The PlayGround!");
+}
+finishHomework(()=>{
+    eatDinner(()=>{
+        goToPlayground();
+    })
 })
-console.log
