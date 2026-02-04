@@ -213,3 +213,18 @@ package.then((msg)=>{
     console.log("finally block")
 })
 console.log(d)
+
+function goToPlayground(){
+    const p=new Promise((res,rej)=>{
+        setTimeout(()=>{
+            let done=true
+            if (done){
+                console.log("went to playground")
+                res("Playground Time")
+            }else{
+                rej("Not allowed")
+            }
+        },2000)
+    })
+    return p
+}
