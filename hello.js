@@ -251,3 +251,86 @@
 // }).finally(()=>{                                                                     
 //     console.log("All tasks are done")
 // })
+
+// Async and Await 
+
+// function orderFood(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("food ordered")
+//             res()
+//         },2000)
+//     })
+// }
+
+
+// function prepareFood(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("food Prepared")
+//             res()
+//         },2000)
+//     })
+// }
+
+
+// function foodDeliver(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("food Deliver")
+//             res()
+//         },2000)
+//     })
+// }
+
+// async function order() {
+//     const data=await orderFood()
+//     console.log(data)
+//     await prepareFood()
+//     await foodDeliver()
+    
+// }
+// order()
+
+// orderFood().then((data)=>{
+//     return prepareFood()
+// }).then((data)=>{
+//     return foodDeliver()
+// }).then((data)=>{
+
+// }).catch((err)=>{
+//     console.log("Something went wrong")
+// })
+
+// console.log("first Line")
+// try{
+//     let sample=234
+//     console.log(sample)
+//     console.log("line after sample")
+// }catch(e){
+//     console.log(e)
+// }
+// console.log("Last Line")
+// try{
+// let age=16
+// if(age<18){
+//     throw new Error("You are not eligible for vote")
+//     // console.log("line after throw")
+//     //
+//     //
+//     //
+    
+// }
+// } catch(e){
+//     console.warn(e)
+// }
+//   console.log('last line')
+async function getdata(){
+ const response=await fetch("https://dummyjson.com/products")
+ const data=await response.json()
+// console.log(data.products[6].title)
+ data.products.forEach((product)=>{
+    console.log(product.title)
+ })
+}
+getdata()
