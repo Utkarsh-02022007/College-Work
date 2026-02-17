@@ -1,4 +1,4 @@
-li{
+/* li{
     width: 200px;
     background-color: rgb(158, 182, 237);
     display: flex;
@@ -8,4 +8,24 @@ li{
      
      
     
+ } */
+
+ .card{
+    background-color: antiquewhite;
+    width: 150px;
+position: relative;
+ }
+ .dlt{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: blueviolet;
+    color: azure;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
  }
