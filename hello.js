@@ -325,12 +325,60 @@
 //     console.warn(e)
 // }
 //   console.log('last line')
-async function getdata(){
- const response=await fetch("https://dummyjson.com/products")
- const data=await response.json()
-// console.log(data.products[6].title)
- data.products.forEach((product)=>{
-    console.log(product.title)
- })
-}
-getdata()
+// async function getbata(){
+//  const response=await fetch("https://dummyjson.com/products")
+//  const data=await response.json()
+// // console.log(data.products[6].title)
+//  data.products.forEach((product)=>{
+//     console.log(product.title)
+//  })
+// }
+// getbata() 
+
+// sending data to api or backend
+// async function sendData() {
+//    const response=await fetch('https://dummyjson.com/products/add',{
+//       method:'POST',
+//       headers:{
+//          "Content-Type":"application/json"
+//       },
+//       body:JSON.stringify({
+//          title:"New Product",
+//          description:"This is a new product",
+//          price:100,
+//          discountPercentage:10,
+//          rating:4.5,
+//          stock:50,
+//          brand:"ABC",
+//          category:"Electronics"
+//       })
+//    })
+//    const data=await response.json()
+//    console.log(data)
+   
+// }
+// sendData()
+
+
+// local storage
+//Store data
+localStorage.setItem("username","Prateek");
+localStorage.setItem('age',45)
+
+//Get data
+console.log(localStorage.getItem("username"))
+console.log(localStorage.getItem("age"))
+
+// localStorage.removeItem('name')
+// console.log(localStorage.getItem('name'))
+
+localStorage.setItem('name','Jhon')
+
+localStorage.removeItem('name')
+console.log(localStorage.getItem('name'))
+
+sessionStorage.setItem('name','alex')
+sessionStorage.setItem('age',45)
+
+console.log(sessionStorage.getItem("name"))
+console.log(sessionStorage.getItem('age'))
