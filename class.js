@@ -369,8 +369,12 @@
 // console.log(localStorage.getItem("username"))
 // console.log(localStorage.getItem("age"))
 
-// // localStorage.removeItem('name')
-// // console.log(localStorage.getItem('name'))
+// Remove data from local storage
+// localStorage.removeItem('username')
+// console.log(localStorage.getItem('username'))
+
+// localStorage.removeItem('age')
+// console.log(localStorage.getItem('age'))
 
 // localStorage.setItem('name','Jhon')
 
@@ -383,7 +387,39 @@
 // console.log(sessionStorage.getItem("name"))
 // console.log(sessionStorage.getItem('age'))
 
-document.cookie="name=Alex;expires=wed,25 Feb 2026 "
+// COOKIES 
 
+// document.cookie="name=54;expires=Wed,25 Feb 2026 23:59:59 GMT"
+// document.cookie="age=45;expires=Wed,25 Feb 2026 23:59:59 GMT"
 
- 
+// console.log(document.cookie)
+
+// function* generate(){
+//     //yeild 1
+//     //yeild 2
+//     //yeild 3
+//     let index=25017343
+//     while(true){
+//         yield index
+//         index++
+//     }
+// }
+// const gen=generate()
+// console.log(gen)
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+
+function add(a){
+    return function(b){
+        return function(c){
+            return a+b+c
+        }
+    }
+}
+const first=add(1)
+console.log(first)
+const second=first(2)
+console.log(second)
+console.log(second(3))
