@@ -362,23 +362,28 @@
 
 // local storage
 //Store data
-localStorage.setItem("username","Prateek");
-localStorage.setItem('age',45)
+// localStorage.setItem("username","Prateek");
+// localStorage.setItem('age',45)
 
-//Get data
-console.log(localStorage.getItem("username"))
-console.log(localStorage.getItem("age"))
+// //Get data
+// console.log(localStorage.getItem("username"))
+// console.log(localStorage.getItem("age"))
+
+// // localStorage.removeItem('name')
+// // console.log(localStorage.getItem('name'))
+
+// localStorage.setItem('name','Jhon')
 
 // localStorage.removeItem('name')
 // console.log(localStorage.getItem('name'))
 
-localStorage.setItem('name','Jhon')
+// sessionStorage.setItem('name','alex')
+// sessionStorage.setItem('age',45)
 
-localStorage.removeItem('name')
-console.log(localStorage.getItem('name'))
+// console.log(sessionStorage.getItem("name"))
+// console.log(sessionStorage.getItem('age'))
 
-sessionStorage.setItem('name','alex')
-sessionStorage.setItem('age',45)
+document.cookie="name=Alex;expires=wed,25 Feb 2026 "
 
-console.log(sessionStorage.getItem("name"))
-console.log(sessionStorage.getItem('age'))
+
+ 
