@@ -7,7 +7,10 @@ const obj1={
 //     // console.log(`${k} : ${obj1[k]}`)
 //                  //or
 //     console.log(key,obj1[key]);
-    
+
+
+    //--------OR---------
+
 // }
 for(let key of Object.keys(obj1)){
     console.log(obj1[key])

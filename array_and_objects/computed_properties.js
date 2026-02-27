@@ -11,6 +11,8 @@ const value2="myvalue2"
 // }
 
 //------OR--------------//
+
+
 const obj={}
 obj[key1]=value1; //assigning key and value in obj
 obj[key2]=value2;
