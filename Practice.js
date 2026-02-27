@@ -77,3 +77,71 @@
 // array1.push("item3");
 // console.log("array1",array1); // output [item1,item2,item3]
 // console.log("array2",array2); // output [item1,item2,item3]
+
+// Clone array
+
+// way 1  slicing method
+// let array1=['apple','banana','mango'];
+// // let array2=array1.slice(0); //  it will slice from zeroth index till end 
+// array1.push('cherry'); // pushing new value in array 1
+// console.log(array1) 
+// console.log(array2)
+
+// way 2 concat method
+// let array2=[].concat(array1,'dragon fruit')
+// let array1=['apple','banana','mango'];
+// console.log(array1) 
+// console.log(array2)
+
+// way 3 spread operator
+// let array1=['apple','banana','mango'];
+// let array2=[...array1,"dragon fruit"]
+// console.log(array1) 
+// console.log(array2)
+
+
+// FOR Loop
+// let fruits=['apple','banana','mango']
+//  for(let i=0 ;i<fruits.length;i++){
+//     console.log(fruits[i].toUpperCase())
+//  }
+
+// let fruits=['apple','banana','mango']
+// let fruit2=[]
+//  for(let i=0 ;i<fruits.length;i++){
+//     fruit2.push(fruits[i].toUpperCase())
+
+// }
+// console.log(fruit2)
+
+//Use const for creating array
+
+// const fruits1=['apple','banana','mango']
+// // fruits1=['dragon fruit','pineapple']
+// fruits1.push('pomegranate')
+// console.log(fruits1)
+
+// while loop
+
+// FIZZ BUZZ PROBLEM With js and while loop
+// const fruits1=[1,2,3,4,9,10,6,25,43,15]
+// const fruits2=[]
+// let i=0
+// while(i<fruits1.length){
+//     if (fruits1[i]%3==0&&fruits1[i]%5==0){
+//         fruits2.push('fizz and buzz')
+//     }
+//     else if (fruits1[i]%3==0) {
+//         fruits2.push('buzz')
+        
+//     } 
+//     else if(fruits1[i]%5==0){
+//         fruits2.push('fizz')
+//     }
+//     else{
+//         fruits2.push(fruits1[i])
+//     }
+//     i++;
+// }
+// console.log(fruits2)
+// console.log(fruits1)

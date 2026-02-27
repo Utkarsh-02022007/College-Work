@@ -411,15 +411,15 @@
 // console.log(gen.next())
 // console.log(gen.next())
 
-function add(a){
-    return function(b){
-        return function(c){
-            return a+b+c
-        }
-    }
-}
-const first=add(1)
-console.log(first)
-const second=first(2)
-console.log(second)
-console.log(second(3))
+// function add(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c
+//         }
+//     }
+// }
+// const first=add(1)
+// console.log(first)
+// const second=first(2)
+// console.log(second)
+// console.log(second(3))
