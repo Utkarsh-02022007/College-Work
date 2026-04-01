@@ -1,7 +1,0 @@
-a="hello" //(string)
-b=12 //(Number or integer)
-c=true //(Bollean)
-d=null //(null means nothing)
-e=undefined //(undefined means it is not given)
-f=BigInt //(used for big number ex- used in reddit facebook where we get big number)
-g=Symbol //(used for uniqueness)
