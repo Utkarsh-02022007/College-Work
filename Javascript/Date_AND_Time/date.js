@@ -10,3 +10,7 @@ console.log(date2.toLocaleDateString())
 
 let date3=new Date("") // YY/MM/DD
 console.log(date3.toLocaleString())
+// Time Stamp
+let myTimeStamp=Date.now();
+console.log(Math.floor(Date.now()/1000)) // converting miliSeconds into Seconds
+console.log(myTimeStamp)
